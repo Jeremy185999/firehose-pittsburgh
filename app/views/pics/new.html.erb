@@ -1,15 +1,21 @@
+<h1 class="stolen-h1 span4 offset5 text-center">
+	Save Your Lesson
+	</h1>
+<div class="stolen-frosty span4 offset5 text-center">
 
-<h2>
 
 <%= simple_form_for @pic do |f| %>
 
-	<%= f.input :lesson %>
-	<%= f.input :emotion %>
-	<%= f.input :learned %>
+<br>
+<h2>
+	<%= f.input :lesson , label: 'Which Lesson?'%>
+	<%= f.input :emotion , label: 'How did you feel?', placeholder: 'Stoked, Jazzed, Super' %>
+	<%= f.input :learned , label: 'What did you learn?', placeholder: 'HTML, CSS, Rails, GitHub, Ruby' %>
+</h2>
 
+	<%= submit_tag 'Save', :class => 'btn btn-success btn-large' %>
 
-	<%= submit_tag 'Save' %>
-	
 <% end %>
 
 </h2>
+</div>
