@@ -5,7 +5,9 @@ class CreatePics < ActiveRecord::Migration
     t.integer :lesson
     t.string :emotion
     t.text :learned
-      t.timestamps
+      
+
+    t.timestamps
     end
   end
 end
