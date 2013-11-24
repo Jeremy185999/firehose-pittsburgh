@@ -3,7 +3,7 @@ class PicsController < ApplicationController
 
 	def create
 		# Pic.create(:lesson => 1, ...)
-		@pic = Pic.create(pic_params)
+		@pic = Pic.create( pic_params )
 
 		redirect_to pics_path
 	end
