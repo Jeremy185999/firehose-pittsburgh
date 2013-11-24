@@ -1,13 +1,18 @@
 <div class="stolen-frosty span6 offset3 text-center">
 
 <h1 class="stolen-h1">Hi I'm Jeremy</h1>
-
+	Lesson: <%= @pic.lesson %>
 <br/>
-
+<%= image_tag @pic.image %>
 
 <h2>
-	I'm having a ton of fun learning web development
+	I felt: <%= @pic.emotion %>
 </h2>
+<h2>
+I learned: <%= @pic.learned %>
+	</h2>
+<%= link_to 'Back' pics_path, :class => 'btn btn-large btn-warning' %>
+
 <br/>
 <br/>
 <%= link_to 'Launch', pics_path, :class => 'btn btn-warning btn-large'  %>
